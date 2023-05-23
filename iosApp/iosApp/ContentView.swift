@@ -4,7 +4,26 @@ import shared
 
 struct ComposeView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
-        Main_iosKt.MainViewController()
+        let nav = UINavigationController()
+        nav.setViewControllers(
+            [
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController(),
+                Main_iosKt.MainViewController()
+            ],
+            animated: true
+        )
+        return nav
     }
 
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
